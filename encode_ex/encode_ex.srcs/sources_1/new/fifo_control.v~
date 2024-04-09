@@ -1,0 +1,93 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2024/04/09 15:02:03
+// Design Name: 
+// Module Name: fifo_control
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module module_name(
+    clk    ,
+    rst_n  ,
+    //其他信号,举例dout
+    dout
+    );
+
+    //参数定义
+    parameter      DATA_W =         8;
+
+    //输入信号定义
+    input               clk    ;
+    input               rst_n  ;
+
+    //输出信号定义
+    output[DATA_W-1:0]  dout   ;
+
+    //输出信号reg定义
+    reg   [DATA_W-1:0]  dout   ;
+
+    //中间信号定义
+    reg                 signal1;
+
+    //组合逻辑写法
+    always@(*)begin
+    end
+
+    //时序逻辑写法
+    always@(posedge clk or negedge rst_n)begin
+        if(rst_n==1'b0)begin
+        end
+        else begin
+        end
+    end
+
+
+  clk_wiz_0 pll
+   (
+    // Clock out ports
+    .clk_out1(clk_out1),     // output clk_out1
+    .clk_out2(clk_out2),     // output clk_out2
+    // Status and control signals
+    .reset(reset), // input reset
+    .locked(locked),       // output locked
+   // Clock in ports
+    .clk_in1(clk_in1));      // input clk_in1
+
+
+fifo_generator_0 fifo (
+  .rst(rst),                  // input wire rst
+  .wr_clk(wr_clk),            // input wire wr_clk
+  .rd_clk(rd_clk),            // input wire rd_clk
+  .din(din),                  // input wire [15 : 0] din
+  .wr_en(wr_en),              // input wire wr_en
+  .rd_en(rd_en),              // input wire rd_en
+  .dout(dout),                // output wire [15 : 0] dout
+  .full(full),                // output wire full
+  .empty(empty),              // output wire empty
+  .wr_rst_busy(wr_rst_busy),  // output wire wr_rst_busy
+  .rd_rst_busy(rd_rst_busy)  // output wire rd_rst_busy
+);
+
+
+
+
+
+
+
+
+    endmodule
+
+

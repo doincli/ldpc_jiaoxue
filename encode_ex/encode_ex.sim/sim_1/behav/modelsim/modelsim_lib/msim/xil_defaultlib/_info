@@ -1,0 +1,496 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 de:/encode_ex/encode_ex.sim/sim_1/behav/modelsim
+T_opt
+!s110 1712645645
+VTBfkfcS2hf^W9TgL]cRNj0
+Z1 04 9 4 work encode_TB fast 0
+Z2 04 4 4 work glbl fast 0
+=1-f02f74ac6533-6614e60b-32c-11a0
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.5;63
+R0
+T_opt1
+!s110 1712649178
+VGWc?bUP80:kSlYIe7Q<=Z0
+R1
+R2
+=1-f02f74ac6533-6614f3d8-1d9-21ac
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L fifo_generator_v13_2_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+R3
+n@_opt1
+R4
+R0
+vclk_wiz_0
+Z5 !s10a 1712646314
+Z6 !s110 1712647947
+!i10b 1
+!s100 C?C[28l@^@1;5CI?Gz>Uc0
+I]fC`ae_VkWnI1;J_I9ZcL1
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z8 w1712646314
+8../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v
+F../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v
+Z9 L0 71
+Z10 OL;L;10.5;63
+r1
+!s85 0
+31
+Z11 !s108 1712647947.000000
+Z12 !s107 ../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v|../../../../encode_ex.srcs/sources_1/new/fifo_control.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v|../../../../encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v|../../../../encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_sync_block.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_multi_gt.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_gt.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_cpll_railing.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_init.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_rx_startup_fsm.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_tx_startup_fsm.v|../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v|../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v|../../../../encode_ex.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v|
+Z13 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0|../../../../encode_ex.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v|../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v|../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_tx_startup_fsm.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_rx_startup_fsm.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_init.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_cpll_railing.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_gt.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode_multi_gt.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_sync_block.v|../../../../encode_ex.srcs/sources_1/ip/encode/encode.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v|../../../../encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v|../../../../encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v|../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v|../../../../encode_ex.srcs/sources_1/new/fifo_control.v|../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v|
+!i113 0
+Z14 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -work xil_defaultlib +incdir+../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vclk_wiz_0_clk_wiz
+R5
+R6
+!i10b 1
+!s100 G7GjK<KA978KLSZh9U=dN2
+IhiMYHA_<CMQ3lL6m1Gko<0
+R7
+R0
+R8
+8../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v
+F../../../../encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v
+Z16 L0 69
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode
+!s10a 1712644907
+R6
+!i10b 1
+!s100 g]1lcka>_<4_fKC3JIHMY1
+Ikz?gY>SO?lMUO5c2XSWk;0
+R7
+R0
+w1712644907
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode.v
+L0 73
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_common
+Z17 !s10a 1712644958
+R6
+!i10b 1
+!s100 N]Yo^HjF7Mj2=eGG6N:aa1
+ICD9MiL?:<K5N7=T5N=kQL1
+R7
+R0
+Z18 w1712644958
+8../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v
+R16
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_common_reset
+R17
+R6
+!i10b 1
+!s100 cKeANQ3?I68I69]6c[H:F3
+IY@E=gje[jUL;B7GZM_Sh21
+R7
+R0
+R18
+8../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v
+L0 74
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_cpll_railing
+Z19 !s10a 1712644904
+R6
+!i10b 1
+!s100 8[37DM20Oj9f6mkm`k>X42
+IF_0<zSHQbdNTRCY@7WUO91
+R7
+R0
+Z20 w1712644904
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode_cpll_railing.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode_cpll_railing.v
+Z21 L0 68
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_exdes
+!s10a 1712648161
+!s110 1712648179
+!i10b 1
+!s100 E[VM5X_UgQE16>BbL]e7;1
+I9^`088@L3k`Hz7jej`4K_2
+R7
+R0
+w1712648161
+8../../../../encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v
+Z22 L0 70
+R10
+r1
+!s85 0
+31
+!s108 1712648179.000000
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_GT
+R19
+R6
+!i10b 1
+!s100 :499P>5?L32@GV55G9T@82
+I_iZKL]V8SJDi:gfdHA[0<0
+R7
+R0
+R20
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode_gt.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode_gt.v
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@g@t
+vencode_GT_FRAME_GEN
+!s10a 1712645616
+R6
+!i10b 1
+!s100 NFcdXF_HJ6bzh^nCcjn6V1
+IK=:Vjz4A<?c^<8TAzBcHJ1
+R7
+R0
+w1712645616
+8../../../../encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v
+R16
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@g@t_@f@r@a@m@e_@g@e@n
+vencode_GT_USRCLK_SOURCE
+R17
+R6
+!i10b 1
+!s100 XEEhYKa88@zOzFPVfQDXI2
+IAKT=;4bB=5;JMll08eoiY2
+R7
+R0
+R18
+8../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v
+R21
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@g@t_@u@s@r@c@l@k_@s@o@u@r@c@e
+vencode_init
+R19
+R6
+!i10b 1
+!s100 aE7W^X:;L64_J>7RgP?760
+I85Y@`2cJV9g4<o^W`eWno2
+R7
+R0
+R20
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode_init.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode_init.v
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_multi_gt
+!s10a 1712644905
+R6
+!i10b 1
+!s100 nCWZTjWR6=lMOGkN[`f:H0
+I5g=]g94j<cKd0BNCg<R:N2
+R7
+R0
+w1712644905
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode_multi_gt.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode_multi_gt.v
+R22
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_RX_STARTUP_FSM
+R19
+R6
+!i10b 1
+!s100 0ojzBJnC1;k5CIh<1_:L72
+IF3n[eZFJ:;ZNV9k8=[HoL3
+R7
+R0
+R20
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_rx_startup_fsm.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_rx_startup_fsm.v
+Z23 L0 94
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@r@x_@s@t@a@r@t@u@p_@f@s@m
+vencode_support
+R17
+R6
+!i10b 1
+!s100 m[Id=F407=cBdSA9GG;4f2
+Im4OYNOH=GYURXEf2D;N6>3
+R7
+R0
+R18
+8../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v
+F../../../../encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v
+R22
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_sync_block
+!s10a 1712644906
+R6
+!i10b 1
+!s100 Y[Y1:mS1gKCRZ1FS`Qj@e1
+I_jQ?ajHYGiHNDLhK4<JCl1
+R7
+R0
+w1712644906
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_sync_block.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_sync_block.v
+L0 78
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vencode_TB
+!s10a 1712644961
+R6
+!i10b 1
+!s100 [^lfWkD1=A]Wn<EUERQIe1
+I[OU73[1PS8R@eBMiMdjl:3
+R7
+R0
+w1712644961
+8../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v
+F../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v
+L0 66
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@t@b
+vencode_TX_STARTUP_FSM
+R19
+R6
+!i10b 1
+!s100 T>kcn@gaN9<L;P?cY`9AX0
+IY?Q`WU72@33ahTfI>BF6V3
+R7
+R0
+R20
+8../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_tx_startup_fsm.v
+F../../../../encode_ex.srcs/sources_1/ip/encode/encode/example_design/encode_tx_startup_fsm.v
+R23
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+nencode_@t@x_@s@t@a@r@t@u@p_@f@s@m
+vfifi_control
+!s10a 1712649794
+!s110 1712649167
+!i10b 1
+!s100 P0AndNGlDSl9@aK<okZ1j0
+IYb@A_lT[YO4oCUCIS:2_A2
+R7
+R0
+w1712649151
+8../../../../encode_ex.srcs/sources_1/new/fifo_control.v
+F../../../../encode_ex.srcs/sources_1/new/fifo_control.v
+L0 22
+R10
+r1
+!s85 0
+31
+!s108 1712649167.000000
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vfifo_generator_0
+!s10a 1712646100
+R6
+!i10b 1
+!s100 O[f8mJE0elLDlGgn>Ao:U0
+I<46lUha9dM4K[ZmGjeFZR3
+R7
+R0
+w1712646100
+8../../../../encode_ex.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v
+F../../../../encode_ex.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v
+L0 56
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R3
+vglbl
+!s110 1712649806
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R7
+R0
+w1513215259
+8glbl.v
+Fglbl.v
+L0 6
+R10
+r1
+!s85 0
+31
+!s108 1712649806.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R14
+R3
