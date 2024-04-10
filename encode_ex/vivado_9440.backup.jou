@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr  9 14:42:44 2024
+# Process ID: 9440
+# Current directory: e:/encode_ex
+# Command line: vivado.exe -notrace -source e:/project_1/project_1.srcs/sources_1/ip/encode/encode_ex.tcl
+# Log file: e:/encode_ex/vivado.log
+# Journal file: e:/encode_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source e:/project_1/project_1.srcs/sources_1/ip/encode/encode_ex.tcl -notrace
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files e:/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_check.v] -no_script -reset -force -quiet
+remove_files  e:/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_check.v
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path D:/modelsim/win64
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name fifo_generator_0
+set_property -dict [list CONFIG.Fifo_Implementation {Independent_Clocks_Block_RAM} CONFIG.Performance_Options {Standard_FIFO} CONFIG.Input_Data_Width {16} CONFIG.Output_Data_Width {16} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {1} CONFIG.Full_Threshold_Assert_Value {1021} CONFIG.Full_Threshold_Negate_Value {1020} CONFIG.Empty_Threshold_Assert_Value {2} CONFIG.Empty_Threshold_Negate_Value {3} CONFIG.Enable_Safety_Circuit {true}] [get_ips fifo_generator_0]
+generate_target {instantiation_template} [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+generate_target all [get_files  e:/encode_ex/encode_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+catch { config_ip_cache -export [get_ips -all fifo_generator_0] }
+export_ip_user_files -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/encode_ex/encode_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci]
+launch_runs -jobs 12 fifo_generator_0_synth_1
+export_simulation -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -directory e:/encode_ex/encode_ex.ip_user_files/sim_scripts -ip_user_files_dir e:/encode_ex/encode_ex.ip_user_files -ipstatic_source_dir e:/encode_ex/encode_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/Xlib} {questa=e:/encode_ex/encode_ex.cache/compile_simlib/questa} {riviera=e:/encode_ex/encode_ex.cache/compile_simlib/riviera} {activehdl=e:/encode_ex/encode_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir e:/encode_ex/encode_ex.srcs/sources_1/new
+close [ open e:/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v w ]
+add_files e:/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 5.4 -module_name clk_wiz_0
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.PRIM_IN_FREQ {50.000} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} CONFIG.CLKIN1_JITTER_PS {200.0} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {17} CONFIG.MMCM_CLKIN1_PERIOD {20.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {17} CONFIG.CLKOUT1_JITTER {213.504} CONFIG.CLKOUT1_PHASE_ERROR {155.540}] [get_ips clk_wiz_0]
+generate_target {instantiation_template} [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files  e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs -jobs 12 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory e:/encode_ex/encode_ex.ip_user_files/sim_scripts -ip_user_files_dir e:/encode_ex/encode_ex.ip_user_files -ipstatic_source_dir e:/encode_ex/encode_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/Xlib} {questa=e:/encode_ex/encode_ex.cache/compile_simlib/questa} {riviera=e:/encode_ex/encode_ex.cache/compile_simlib/riviera} {activehdl=e:/encode_ex/encode_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {18} CONFIG.MMCM_CLKOUT0_DIVIDE_F {18} CONFIG.MMCM_CLKOUT1_DIVIDE {9} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {210.144} CONFIG.CLKOUT1_PHASE_ERROR {161.614} CONFIG.CLKOUT2_JITTER {175.200} CONFIG.CLKOUT2_PHASE_ERROR {161.614}] [get_ips clk_wiz_0]
+generate_target all [get_files  e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 12 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files e:/encode_ex/encode_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory e:/encode_ex/encode_ex.ip_user_files/sim_scripts -ip_user_files_dir e:/encode_ex/encode_ex.ip_user_files -ipstatic_source_dir e:/encode_ex/encode_ex.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/xilinx/Xlib} {questa=e:/encode_ex/encode_ex.cache/compile_simlib/questa} {riviera=e:/encode_ex/encode_ex.cache/compile_simlib/riviera} {activehdl=e:/encode_ex/encode_ex.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64
+launch_simulation -install_path D:/modelsim/win64

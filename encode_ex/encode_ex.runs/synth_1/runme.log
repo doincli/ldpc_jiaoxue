@@ -1,0 +1,791 @@
+
+*** Running vivado
+    with args -log encode_exdes.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source encode_exdes.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source encode_exdes.tcl -notrace
+Command: synth_design -top encode_exdes -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 426.734 ; gain = 97.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'encode_exdes' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:70]
+	Parameter EXAMPLE_CONFIG_INDEPENDENT_LANES bound to: 1 - type: integer 
+	Parameter EXAMPLE_LANE_WITH_START_CHAR bound to: 0 - type: integer 
+	Parameter EXAMPLE_WORDS_IN_BRAM bound to: 512 - type: integer 
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter EXAMPLE_USE_CHIPSCOPE bound to: 0 - type: integer 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:93]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:99]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:100]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:103]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:104]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:105]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:106]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:107]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:108]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:109]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:110]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:111]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:112]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:288]
+INFO: [Synth 8-638] synthesizing module 'encode_support' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v:70]
+	Parameter EXAMPLE_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'encode_GT_USRCLK_SOURCE' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS_GTE2' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS_GTE2' (1#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'encode_GT_USRCLK_SOURCE' (3#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_gt_usrclk_source.v:68]
+INFO: [Synth 8-638] synthesizing module 'encode_common' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v:69]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter QPLL_FBDIV_TOP bound to: 40 - type: integer 
+	Parameter QPLL_FBDIV_IN bound to: 10'b0010000000 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+INFO: [Synth 8-638] synthesizing module 'GTXE2_COMMON' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:11315]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000001000000000000000000000000000001000000000000 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK_INVERTED bound to: 1'b0 
+	Parameter IS_QPLLLOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter QPLL_CFG bound to: 27'b000011010000000000111000001 
+	Parameter QPLL_CLKOUT_CFG bound to: 4'b0000 
+	Parameter QPLL_COARSE_FREQ_OVRD bound to: 6'b010000 
+	Parameter QPLL_COARSE_FREQ_OVRD_EN bound to: 1'b0 
+	Parameter QPLL_CP bound to: 10'b0000011111 
+	Parameter QPLL_CP_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_DMONITOR_SEL bound to: 1'b0 
+	Parameter QPLL_FBDIV bound to: 10'b0010000000 
+	Parameter QPLL_FBDIV_MONITOR_EN bound to: 1'b0 
+	Parameter QPLL_FBDIV_RATIO bound to: 1'b1 
+	Parameter QPLL_INIT_CFG bound to: 24'b000000000000000000000110 
+	Parameter QPLL_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL_LPF bound to: 4'b1111 
+	Parameter QPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter SIM_QPLLREFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 4.0 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'GTXE2_COMMON' (4#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:11315]
+INFO: [Synth 8-256] done synthesizing module 'encode_common' (5#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common.v:69]
+INFO: [Synth 8-638] synthesizing module 'encode_common_reset' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:74]
+	Parameter STABLE_CLOCK_PERIOD bound to: 10 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 50 - type: integer 
+	Parameter WAIT_MAX bound to: 60 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter ASSERT_COMMON_RESET bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:121]
+INFO: [Synth 8-256] done synthesizing module 'encode_common_reset' (6#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:74]
+INFO: [Synth 8-638] synthesizing module 'encode' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/encode_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'encode' (7#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/encode_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'encode_support' (8#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_support.v:70]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (9#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'encode_GT_FRAME_GEN' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:69]
+	Parameter WORDS_IN_BRAM bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:98]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:98]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:99]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:99]
+INFO: [Synth 8-3876] $readmem data file 'gt_rom_init_tx.dat' is read successfully [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:142]
+INFO: [Synth 8-256] done synthesizing module 'encode_GT_FRAME_GEN' (10#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:69]
+INFO: [Synth 8-638] synthesizing module 'fifi_control' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:22]
+	Parameter DATA_W bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (11#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_0' (12#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:172]
+INFO: [Synth 8-638] synthesizing module 'wr_fifo' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/wr_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'wr_fifo' (13#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/wr_fifo_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:180]
+INFO: [Synth 8-638] synthesizing module 'rd_fifo' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/rd_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'rd_fifo' (14#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/rd_fifo_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_look'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:172]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:157]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rd_look'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:180]
+INFO: [Synth 8-256] done synthesizing module 'fifi_control' (15#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:22]
+INFO: [Synth 8-638] synthesizing module 'ldpc_control' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:24]
+	Parameter DATA_W bound to: 16 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter S_out bound to: 1 - type: integer 
+	Parameter P_out bound to: 2 - type: integer 
+	Parameter Frame_delay bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'H1' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'H1' (16#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'H2' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'H2' (17#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'H3' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H3_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'H3' (18#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H3_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'H4' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H4_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'H4' (19#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/H4_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'encode_p' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/encode_p.v:23]
+	Parameter DATA_W bound to: 16 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/encode_p.v:202]
+INFO: [Synth 8-638] synthesizing module 'ila_1' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_1' (20#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'p_check'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/encode_p.v:202]
+INFO: [Synth 8-256] done synthesizing module 'encode_p' (21#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/encode_p.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:322]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (22#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ldpc_result'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:322]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'h4'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:248]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'h3'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:242]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'h2'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:236]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'h1'. This will prevent further optimization [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:230]
+INFO: [Synth 8-256] done synthesizing module 'ldpc_control' (23#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:24]
+WARNING: [Synth 8-3848] Net TRACK_DATA_OUT in module/entity encode_exdes does not have driver. [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:85]
+INFO: [Synth 8-256] done synthesizing module 'encode_exdes' (24#1) [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_exdes.v:70]
+WARNING: [Synth 8-3331] design encode_support has unconnected port gt0_txpmareset_in
+WARNING: [Synth 8-3331] design encode_exdes has unconnected port TRACK_DATA_OUT
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 509.098 ; gain = 180.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 509.098 ; gain = 180.316
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp11/encode_in_context.xdc] for cell 'encode_support_i/encode_init_i'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp11/encode_in_context.xdc] for cell 'encode_support_i/encode_init_i'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp12/fifo_generator_0_in_context.xdc] for cell 'u1/fifo'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp12/fifo_generator_0_in_context.xdc] for cell 'u1/fifo'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp13/clk_wiz_0_in_context.xdc] for cell 'u1/pll'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp13/clk_wiz_0_in_context.xdc] for cell 'u1/pll'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp14/H1_in_context.xdc] for cell 'u2/h1'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp14/H1_in_context.xdc] for cell 'u2/h1'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp15/H2_in_context.xdc] for cell 'u2/h2'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp15/H2_in_context.xdc] for cell 'u2/h2'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp16/H3_in_context.xdc] for cell 'u2/h3'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp16/H3_in_context.xdc] for cell 'u2/h3'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp17/H4_in_context.xdc] for cell 'u2/h4'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp17/H4_in_context.xdc] for cell 'u2/h4'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp18/wr_fifo_in_context.xdc] for cell 'u1/fifo_look'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp18/wr_fifo_in_context.xdc] for cell 'u1/fifo_look'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp19/rd_fifo_in_context.xdc] for cell 'u1/rd_look'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp19/rd_fifo_in_context.xdc] for cell 'u1/rd_look'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp20/ila_0_in_context.xdc] for cell 'u2/ldpc_result'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp20/ila_0_in_context.xdc] for cell 'u2/ldpc_result'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p1/p_check'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p1/p_check'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p2/p_check'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p2/p_check'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p3/p_check'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p3/p_check'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p4/p_check'
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/.Xil/Vivado-23172-User-2021FZLJGL/dcp21/ila_1_in_context.xdc] for cell 'u2/p4/p_check'
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/constrs_1/imports/example_design/encode_exdes.xdc]
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/constrs_1/imports/example_design/encode_exdes.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/constrs_1/imports/example_design/encode_exdes.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/encode_exdes_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/encode_exdes_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 913.293 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u2/h1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u2/h2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u2/h3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u2/h4' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 913.293 ; gain = 584.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 913.293 ; gain = 584.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for encode_support_i/encode_init_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/fifo_look. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u1/rd_look. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/h1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/h2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/h3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/h4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/ldpc_result. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/p1/p_check. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/p2/p_check. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/p3/p_check. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u2/p4/p_check. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 913.293 ; gain = 584.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element init_wait_count_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:104]
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element read_counter_i_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:118]
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:122]
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'ldpc_control'
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element p_cnt_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:139]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   S_out |                               01 |                              001
+                   P_out |                               10 |                              010
+             Frame_delay |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_c_reg' using encoding 'sequential' in module 'ldpc_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 913.293 ; gain = 584.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	  16 Input      1 Bit         XORs := 256   
+	   2 Input      1 Bit         XORs := 256   
++---Registers : 
+	               80 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               16 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	  18 Input     80 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module encode_exdes 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module encode_common_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module encode_GT_FRAME_GEN 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               80 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  18 Input     80 Bit        Muxes := 1     
+Module fifi_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module encode_p__xdcDup__1 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module encode_p__xdcDup__2 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module encode_p__xdcDup__3 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module encode_p 
+Detailed RTL Component Info : 
++---XORs : 
+	  16 Input      1 Bit         XORs := 64    
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ldpc_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element cnt1_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/fifo_control.v:122]
+WARNING: [Synth 8-6014] Unused sequential element p_cnt_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/new/ldpc_control.v:139]
+WARNING: [Synth 8-6014] Unused sequential element encode_support_i/common_reset_i/COMMON_RESET_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:116]
+INFO: [Synth 8-5546] ROM "encode_support_i/common_reset_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "encode_support_i/common_reset_i/init_wait_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element encode_support_i/common_reset_i/init_wait_count_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/support/encode_common_reset.v:104]
+WARNING: [Synth 8-6014] Unused sequential element gt0_frame_gen/read_counter_i_reg was removed.  [E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.srcs/sources_1/imports/example_design/encode_gt_frame_gen.v:118]
+WARNING: [Synth 8-3331] design encode_exdes has unconnected port TRACK_DATA_OUT
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[8]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[21]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[9]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[21]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[23]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[22]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[29]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/tx_data_ram_r_reg[30]' (FD) to 'gt0_frame_gen/tx_data_ram_r_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gt0_frame_gen/tx_data_ram_r_reg[31] )
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[8]' (FDR) to 'gt0_frame_gen/TXCTRL_OUT_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TXCTRL_OUT_reg[0]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[21]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[9]' (FDR) to 'gt0_frame_gen/TXCTRL_OUT_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TXCTRL_OUT_reg[1]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[22]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[21]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[23]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[22]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[29]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[29]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[30]'
+INFO: [Synth 8-3886] merging instance 'gt0_frame_gen/TX_DATA_OUT_reg[30]' (FDR) to 'gt0_frame_gen/TX_DATA_OUT_reg[31]'
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/read_counter_i_reg_rep[8]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/read_counter_i_reg_rep[7]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/read_counter_i_reg_rep[6]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/read_counter_i_reg_rep[5]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[7]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[6]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[5]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[4]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[3]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[2]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[1]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_count_reg[0]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/init_wait_done_reg) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/state_reg) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (encode_support_i/common_reset_i/common_reset_asserted_reg) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[79]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[78]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[77]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[76]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[75]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[74]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[73]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[72]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[71]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[70]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[69]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[68]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[67]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[66]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[65]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[64]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[63]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[62]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[61]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[60]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[59]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[58]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[57]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[56]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[55]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[54]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[53]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[52]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[51]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[50]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[49]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[48]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[47]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[46]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[45]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[44]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[43]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[42]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[41]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[40]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[39]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[38]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[37]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[36]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[35]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[34]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[33]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[32]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[31]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[15]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[14]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[13]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[12]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[11]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[10]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[7]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[6]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[5]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[4]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[3]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[2]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[1]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/tx_data_ram_r_reg[0]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[79]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[78]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[77]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[76]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[75]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[74]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[73]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[72]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[71]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[70]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[69]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[68]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[67]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[66]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[65]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[64]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[63]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[62]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[61]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[60]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[59]) is unused and will be removed from module encode_exdes.
+INFO: [Synth 8-3332] Sequential element (gt0_frame_gen/TX_DATA_OUT_reg[58]) is unused and will be removed from module encode_exdes.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u2/\charisk_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 913.293 ; gain = 584.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'encode_support_i/encode_init_i/gt0_rxoutclkfabric_out' to pin 'encode_support_i/encode_init_i/bbstub_gt0_rxoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'encode_support_i/encode_init_i/gt0_txoutclk_out' to pin 'encode_support_i/encode_init_i/bbstub_gt0_txoutclk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'encode_support_i/encode_init_i/gt0_txoutclkfabric_out' to pin 'encode_support_i/encode_init_i/bbstub_gt0_txoutclkfabric_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u1/pll/clk_out1' to pin 'u1/pll/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u1/pll/clk_in1' to 'i_5/gt0_frame_gen/read_counter_i_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u1/pll/clk_out2' to pin 'u1/pll/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'u1/pll/clk_in1' to 'i_5/gt0_frame_gen/read_counter_i_reg[0]/C'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 920.660 ; gain = 591.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 956.727 ; gain = 627.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-139] cannot merge instances \gt0_frame_gen/read_counter_i_reg[0]  and \gt0_frame_gen/read_counter_i_reg_rep[0]  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances \gt0_frame_gen/read_counter_i_reg[0]  and \gt0_frame_gen/read_counter_i_reg_rep[0]  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances \gt0_frame_gen/read_counter_i_reg[0]  and \gt0_frame_gen/read_counter_i_reg_rep[0]  because of non-equivalent assertions
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin soft_reset_vio_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r2_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin rxresetdone_vio_i_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |fifo_generator_0 |         1|
+|3     |wr_fifo          |         1|
+|4     |rd_fifo          |         1|
+|5     |ila_1            |         4|
+|6     |H1               |         1|
+|7     |H2               |         1|
+|8     |H3               |         1|
+|9     |H4               |         1|
+|10    |ila_0            |         1|
+|11    |encode           |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |H1               |     1|
+|2     |H2               |     1|
+|3     |H3               |     1|
+|4     |H4               |     1|
+|5     |clk_wiz_0        |     1|
+|6     |encode           |     1|
+|7     |fifo_generator_0 |     1|
+|8     |ila_0            |     1|
+|9     |ila_1            |     1|
+|10    |ila_1__4         |     1|
+|11    |ila_1__5         |     1|
+|12    |ila_1__6         |     1|
+|13    |rd_fifo          |     1|
+|14    |wr_fifo          |     1|
+|15    |BUFG             |     2|
+|16    |GTXE2_COMMON     |     1|
+|17    |IBUFDS_GTE2      |     1|
+|18    |LUT1             |    23|
+|19    |LUT2             |    12|
+|20    |LUT3             |    11|
+|21    |LUT4             |  1045|
+|22    |LUT5             |  1049|
+|23    |LUT6             |   359|
+|24    |MUXF7            |    32|
+|25    |MUXF8            |    16|
+|26    |FDCE             |   344|
+|27    |FDRE             |    38|
+|28    |IBUF             |     4|
+|29    |IBUFDS           |     1|
+|30    |OBUF             |     2|
+|31    |OBUFT            |     1|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------------------+------------------------+------+
+|      |Instance             |Module                  |Cells |
++------+---------------------+------------------------+------+
+|1     |top                  |                        |  7140|
+|2     |  u1                 |fifi_control            |    78|
+|3     |  u2                 |ldpc_control            |  6896|
+|4     |    p1               |encode_p__xdcDup__1     |   645|
+|5     |    p2               |encode_p__xdcDup__2     |   645|
+|6     |    p3               |encode_p__xdcDup__3     |   645|
+|7     |    p4               |encode_p                |   645|
+|8     |  encode_support_i   |encode_support          |    85|
+|9     |    common0_i        |encode_common           |     1|
+|10    |    gt_usrclk_source |encode_GT_USRCLK_SOURCE |     2|
+|11    |  gt0_frame_gen      |encode_GT_FRAME_GEN     |    58|
++------+---------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 959.496 ; gain = 226.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 959.496 ; gain = 630.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+238 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 959.496 ; gain = 632.445
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/synth_1/encode_exdes.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file encode_exdes_utilization_synth.rpt -pb encode_exdes_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 959.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 17:33:55 2024...

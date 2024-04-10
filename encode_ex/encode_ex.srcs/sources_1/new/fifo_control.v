@@ -103,7 +103,7 @@ module fifi_control(
         end
     end
 
-    assign add_cnt = data_in == 16'h02bc ;       
+    assign add_cnt = data_in == 16'h02bc && wr_en==1 ;       
     assign end_cnt = add_cnt && cnt== 5 ;   
 
     //¶ÁÊ¹ÄÜ¿ØÖÆ
@@ -155,7 +155,7 @@ module fifi_control(
 
 
 fifo_generator_0 fifo (
-  .rst(!rst_n),                  // input wire rst
+  .rst(!locked),                  // input wire rst
   .wr_clk(wr_clk),            // input wire wr_clk
   .rd_clk(rd_clk),            // input wire rd_clk
   .din(data_tmp),                  // input wire [15 : 0] din
@@ -169,9 +169,22 @@ fifo_generator_0 fifo (
 );
 
 
+wr_fifo fifo_look (
+	.clk(wr_clk), // input wire clk
+	.probe0(data_tmp), // input wire [15:0]  probe0  
+	.probe1(wr_en), // input wire [0:0]  probe1 
+	.probe2(full) // input wire [0:0]  probe2
+);
 
 
-
+rd_fifo rd_look (
+	.clk(rd_clk), // input wire clk
+	.probe0(data_out), // input wire [15:0]  probe0  
+	.probe1(empty), // input wire [0:0]  probe1 
+	.probe2(wr_rst_busy), // input wire [0:0]  probe2 
+	.probe3(rd_en), // input wire [0:0]  probe3 
+	.probe4(rd_rst_busy) // input wire [0:0]  probe4
+);
 
 
 

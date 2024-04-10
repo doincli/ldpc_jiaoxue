@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='e:/encode_ex/encode_ex.runs/clk_wiz_0_synth_1'
+HD_PWD='E:/ldpc_jiaoxue/ldpc_jiaoxue/encode_ex/encode_ex.runs/clk_wiz_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

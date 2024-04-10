@@ -732,6 +732,8 @@ assign soft_reset_i = tied_to_ground_i;
    wire rd_clk;
    wire rd_en;
    wire[15:0] data_out;
+   wire [15:0] encode_data;
+   wire [1:0] risk_data;
    assign rst = gt0_rx_system_reset_c;
      fifi_control u1(
        .clk (gt0_rxusrclk2_i)   ,
@@ -741,6 +743,14 @@ assign soft_reset_i = tied_to_ground_i;
        .rd_en(rd_en),
        .data_out(data_out)
        );
+    ldpc_control  u2(
+    .clk(rd_clk),
+    .rst_n(!rst),
+    .rd_en(rd_en),
+    .data_in(data_out),
+    .data_out(encode_data),
+    .charisk(risk_data)
+    );
 
 endmodule
     

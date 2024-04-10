@@ -12,9 +12,10 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do {encode_TB_simulate.do}
-# vsim -voptargs=""+acc"" -L fifo_generator_v13_2_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.encode_TB xil_defaultlib.glbl 
-# Start time: 16:03:33 on Apr 09,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.encode_TB xil_defaultlib.glbl 
+# Start time: 17:31:05 on Apr 10,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "ldpc_control(fast)".
 # Loading work.encode_TB(fast)
 # Loading work.encode_exdes(fast)
 # Loading work.encode_support(fast)
@@ -41,13 +42,32 @@
 # Loading work.fifi_control(fast)
 # Loading work.clk_wiz_0(fast)
 # Loading work.clk_wiz_0_clk_wiz(fast)
-# Loading unisims_ver.IBUF(fast)
 # Loading unisims_ver.PLLE2_ADV(fast)
 # Loading work.fifo_generator_0(fast)
 # Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast)
 # Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast)
 # Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast)
 # Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast)
+# Loading work.wr_fifo(fast)
+# Loading work.rd_fifo(fast)
+# Loading work.ldpc_control(fast)
+# Loading work.H1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.H2(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__1)
+# Loading work.H3(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__2)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__2)
+# Loading work.H4(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__3)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__3)
+# Loading work.encode_p(fast)
+# Loading work.ila_1(fast)
+# Loading work.ila_0(fast)
 # Loading work.glbl(fast)
 # 1
 # 1
@@ -56,39 +76,124 @@
 # .main_pane.objects.interior.cs.body.tree
 # Timing checks are not valid
 # WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h2.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h3.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h4.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
 # Timing checks are valid
 add wave -position insertpoint  \
-sim:/encode_TB/encode_exdes_i/u1/DATA_W \
-sim:/encode_TB/encode_exdes_i/u1/clk \
-sim:/encode_TB/encode_exdes_i/u1/rst_n \
-sim:/encode_TB/encode_exdes_i/u1/data_in \
-sim:/encode_TB/encode_exdes_i/u1/data_out \
-sim:/encode_TB/encode_exdes_i/u1/rd_clk \
-sim:/encode_TB/encode_exdes_i/u1/rd_en \
-sim:/encode_TB/encode_exdes_i/u1/wr_clk \
-sim:/encode_TB/encode_exdes_i/u1/locked \
-sim:/encode_TB/encode_exdes_i/u1/data_tmp \
-sim:/encode_TB/encode_exdes_i/u1/wr_en \
-sim:/encode_TB/encode_exdes_i/u1/full \
-sim:/encode_TB/encode_exdes_i/u1/add_cnt \
-sim:/encode_TB/encode_exdes_i/u1/end_cnt \
-sim:/encode_TB/encode_exdes_i/u1/cnt \
-sim:/encode_TB/encode_exdes_i/u1/add_cnt1 \
-sim:/encode_TB/encode_exdes_i/u1/end_cnt1 \
-sim:/encode_TB/encode_exdes_i/u1/cnt1 \
-sim:/encode_TB/encode_exdes_i/u1/empty \
-sim:/encode_TB/encode_exdes_i/u1/wr_rst_busy \
-sim:/encode_TB/encode_exdes_i/u1/rd_rst_busy \
-sim:/encode_TB/encode_exdes_i/u1/rd_en1 \
-sim:/encode_TB/encode_exdes_i/u1/rd_end \
-sim:/encode_TB/encode_exdes_i/u1/rd_start \
-sim:/encode_TB/encode_exdes_i/u1/wr_start \
-sim:/encode_TB/encode_exdes_i/u1/wr_end
+sim:/encode_TB/encode_exdes_i/u2/DATA_W \
+sim:/encode_TB/encode_exdes_i/u2/IDLE \
+sim:/encode_TB/encode_exdes_i/u2/S_out \
+sim:/encode_TB/encode_exdes_i/u2/P_out \
+sim:/encode_TB/encode_exdes_i/u2/Frame_delay \
+sim:/encode_TB/encode_exdes_i/u2/clk \
+sim:/encode_TB/encode_exdes_i/u2/rst_n \
+sim:/encode_TB/encode_exdes_i/u2/rd_en \
+sim:/encode_TB/encode_exdes_i/u2/data_in \
+sim:/encode_TB/encode_exdes_i/u2/data_out \
+sim:/encode_TB/encode_exdes_i/u2/charisk \
+sim:/encode_TB/encode_exdes_i/u2/state_c \
+sim:/encode_TB/encode_exdes_i/u2/state_n \
+sim:/encode_TB/encode_exdes_i/u2/IDL2S_out \
+sim:/encode_TB/encode_exdes_i/u2/S_out2P_out \
+sim:/encode_TB/encode_exdes_i/u2/P_out2Frame \
+sim:/encode_TB/encode_exdes_i/u2/Frame2S_out \
+sim:/encode_TB/encode_exdes_i/u2/add_s_cnt \
+sim:/encode_TB/encode_exdes_i/u2/end_s_cnt \
+sim:/encode_TB/encode_exdes_i/u2/s_cnt \
+sim:/encode_TB/encode_exdes_i/u2/add_p_cnt \
+sim:/encode_TB/encode_exdes_i/u2/end_p_cnt \
+sim:/encode_TB/encode_exdes_i/u2/p_cnt \
+sim:/encode_TB/encode_exdes_i/u2/data_tmp \
+sim:/encode_TB/encode_exdes_i/u2/p_data \
+sim:/encode_TB/encode_exdes_i/u2/ldpc_data \
+sim:/encode_TB/encode_exdes_i/u2/rom_data1 \
+sim:/encode_TB/encode_exdes_i/u2/rom_data2 \
+sim:/encode_TB/encode_exdes_i/u2/rom_data3 \
+sim:/encode_TB/encode_exdes_i/u2/rom_data4 \
+sim:/encode_TB/encode_exdes_i/u2/add_addra \
+sim:/encode_TB/encode_exdes_i/u2/end_addra \
+sim:/encode_TB/encode_exdes_i/u2/addra \
+sim:/encode_TB/encode_exdes_i/u2/rd_tmp
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.encode_TB(fast)
+# Loading work.encode_exdes(fast)
+# Loading work.encode_support(fast)
+# Loading work.encode_GT_USRCLK_SOURCE(fast)
+# Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.encode_common(fast)
+# Loading unisims_ver.GTXE2_COMMON(fast)
+# Loading work.encode_common_reset(fast)
+# Loading work.encode(fast)
+# Loading work.encode_init(fast)
+# Loading work.encode_multi_gt(fast)
+# Loading work.encode_GT(fast)
+# Loading unisims_ver.GTXE2_CHANNEL(fast)
+# Loading work.encode_cpll_railing(fast)
+# Loading unisims_ver.BUFH(fast)
+# Loading work.encode_TX_STARTUP_FSM(fast)
+# Loading work.encode_sync_block(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading work.encode_RX_STARTUP_FSM(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.encode_GT_FRAME_GEN(fast)
+# Loading work.fifi_control(fast)
+# Loading work.clk_wiz_0(fast)
+# Loading work.clk_wiz_0_clk_wiz(fast)
+# Loading unisims_ver.PLLE2_ADV(fast)
+# Loading work.fifo_generator_0(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast)
+# Loading work.wr_fifo(fast)
+# Loading work.rd_fifo(fast)
+# Loading work.ldpc_control(fast)
+# Loading work.H1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.H2(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__1)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__1)
+# Loading work.H3(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__2)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__2)
+# Loading work.H4(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast__3)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast__3)
+# Loading work.encode_p(fast)
+# Loading work.ila_1(fast)
+# Loading work.ila_0(fast)
+# Loading work.glbl(fast)
 run
-run
-####### ERROR: TEST FAILED ! #######
-# ** Note: $stop    : ../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v(197)
-#    Time: 349 us  Iteration: 0  Instance: /encode_TB
-# Break in Module encode_TB at ../../../../encode_ex.srcs/sim_1/imports/simulation/encode_tb.v line 197
-# End time: 16:06:39 on Apr 09,2024, Elapsed time: 0:03:06
+# Timing checks are not valid
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h1.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h2.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h3.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module encode_TB.encode_exdes_i.u2.h4.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Timing checks are valid
+# End time: 17:32:39 on Apr 10,2024, Elapsed time: 0:01:34
 # Errors: 0, Warnings: 0
