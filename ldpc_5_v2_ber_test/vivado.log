@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Apr 11 14:13:46 2024
+# Process ID: 7856
+# Current directory: D:/ldpc/ldpc_5_v2_ber_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13024 D:\ldpc\ldpc_5_v2_ber_test\test_ldpc.xpr
+# Log file: D:/ldpc/ldpc_5_v2_ber_test/vivado.log
+# Journal file: D:/ldpc/ldpc_5_v2_ber_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.xpr
+INFO: [Project 1-313] Project file moved from 'E:/ldpc_5_v2_ber_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 970.230 ; gain = 249.422
+update_compile_order -fileset sources_1
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:14:24 on Apr 11,2024
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_gt_usrclk_source.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Skipping module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Skipping module decode
+# -- Skipping module all_control
+# -- Skipping module ber_com
+# -- Skipping module buff
+# -- Skipping module decode_exdes
+# -- Skipping module decode_GT_FRAME_GEN
+# -- Skipping module decode_out
+# -- Skipping module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Skipping module rx_clk_common
+# -- Skipping module rx_clk_common_reset
+# -- Skipping module rx_clk_GT_USRCLK_SOURCE
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 14:14:24 on Apr 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 14:14:26 on Apr 11,2024
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 14:14:26 on Apr 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=4036)
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1098.648 ; gain = 38.426
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'ipx::open_core' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [Common 17-14] Message 'SIM-utils 43' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:15:18 on Apr 11,2024
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_gt_usrclk_source.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Skipping module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Skipping module decode
+# -- Skipping module all_control
+# -- Skipping module ber_com
+# -- Skipping module buff
+# -- Skipping module decode_exdes
+# -- Skipping module decode_GT_FRAME_GEN
+# -- Skipping module decode_out
+# -- Skipping module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Skipping module rx_clk_common
+# -- Skipping module rx_clk_common_reset
+# -- Skipping module rx_clk_GT_USRCLK_SOURCE
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 15:15:18 on Apr 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:15:19 on Apr 11,2024
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:15:20 on Apr 11,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/ldpc/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=3280)
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1354.727 ; gain = 7.668
+get_property LE_LINES [get_cells -hierarchical]
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 15:32:28 2024...

@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim
+vdist_mem_gen_v8_0_12
+!s10a 1646615550
+!s110 1658194591
+!i10b 1
+!s100 lDQcNhF;`zn8nB5R<24;V3
+IMF7VKOie@km5W87AGHg9G2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1646615550
+8../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+F../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+L0 78
+OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1658194591.000000
+!s107 ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!s90 -64|-incr|-work|dist_mem_gen_v8_0_12|+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit|+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll|../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!i113 0
+o-work dist_mem_gen_v8_0_12 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -work dist_mem_gen_v8_0_12 +incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit +incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

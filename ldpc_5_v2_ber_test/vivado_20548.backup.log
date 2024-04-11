@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Apr 10 03:57:25 2024
+# Process ID: 20548
+# Current directory: E:/ldpc_5_v2_ber_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6092 E:\ldpc_5_v2_ber_test\test_ldpc.xpr
+# Log file: E:/ldpc_5_v2_ber_test/vivado.log
+# Journal file: E:/ldpc_5_v2_ber_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ldpc_5_v2_ber_test/test_ldpc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 966.902 ; gain = 239.039
+update_compile_order -fileset sources_1
+close_project
+open_project D:/ldpc/encode_ex/encode_ex.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1008.801 ; gain = 41.898
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 425 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_board.xdc]
+Finished Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_board.xdc]
+Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_early.xdc]
+Finished Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_early.xdc]
+Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/ldpc/encode_ex/encode_ex.runs/impl_1/.Xil/Vivado-23152-User-2021FZLJGL/dbg_hub_CV.0/out/xsdbm.xdc:10]
+INFO: [Timing 38-2] Deriving generated clocks [d:/ldpc/encode_ex/encode_ex.runs/impl_1/.Xil/Vivado-23152-User-2021FZLJGL/dbg_hub_CV.0/out/xsdbm.xdc:10]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2094.434 ; gain = 617.582
+Finished Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes.xdc]
+Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_late.xdc]
+Finished Parsing XDC File [E:/ldpc_5_v2_ber_test/.Xil/Vivado-20548-User-2021FZLJGL/dcp0/encode_exdes_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.949 . Memory (MB): peak = 2099.078 ; gain = 4.645
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.950 . Memory (MB): peak = 2099.078 ; gain = 4.645
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 162 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 156 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2229.098 ; gain = 1220.297
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2433.688 ; gain = 167.293
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 04:40:25 2024...

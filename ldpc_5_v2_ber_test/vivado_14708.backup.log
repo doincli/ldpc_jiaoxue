@@ -1,0 +1,1437 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 19 09:08:17 2022
+# Process ID: 14708
+# Current directory: E:/ldpc_5_v2_ber_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18616 E:\ldpc_5_v2_ber_test\test_ldpc.xpr
+# Log file: E:/ldpc_5_v2_ber_test/vivado.log
+# Journal file: E:/ldpc_5_v2_ber_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ldpc_5_v2_ber_test/test_ldpc.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/doinc/Desktop/decode_final_test/ldpc_5_v2_ber_test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 930.848 ; gain = 208.750
+update_compile_order -fileset sources_1
+set_property target_simulator ModelSim [current_project]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/decode_code/all_control.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/decode_code/buff.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/decode_code/all_control.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/decode_code/buff.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/data_pri/data_pri.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'data_pri'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/data_pri/data_pri.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/data_pri/data_pri.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_4/H3_4.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H3_4'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_4/H3_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_4/H3_4.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_3/H3_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H3_3'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_3/H3_3.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_3/H3_3.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_2/H3_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H3_2'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_2/H3_2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_2/H3_2.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_1/H3_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H3_1'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_1/H3_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H3_1/H3_1.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_4/H2_4.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H2_4'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_4/H2_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_4/H2_4.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_3/H2_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H2_3'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_3/H2_3.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_3/H2_3.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_2/H2_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H2_2'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_2/H2_2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_2/H2_2.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_1/H2_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H2_1'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_1/H2_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H2_1/H2_1.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_4/H1_4.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H1_4'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_4/H1_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_4/H1_4.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_3/H1_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H1_3'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_3/H1_3.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_3/H1_3.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_2/H1_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H1_2'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_2/H1_2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_2/H1_2.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_1/H1_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'H1_1'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_1/H1_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/H1_1/H1_1.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_4/coe4_4.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'coe4_4'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_4/coe4_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_4/coe4_4.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_3/coe4_3.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'coe4_3'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_3/coe4_3.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_3/coe4_3.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_2/coe4_2.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'coe4_2'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_2/coe4_2.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_2/coe4_2.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_1/coe4_1.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'coe4_1'...
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_1/coe4_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/coe4_1/coe4_1.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap blk_mem_gen_v8_4_1 modelsim_lib/msim/blk_mem_gen_v8_4_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap fifo_generator_v13_2_1 modelsim_lib/msim/fifo_generator_v13_2_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:28 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v 
+# -- Compiling module ila_1
+# -- Compiling module ber_ila
+# 
+# Top level modules:
+# 	ila_1
+# 	ber_ila
+# End time: 09:36:28 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:28 on Jul 19,2022
+# vlog -64 -incr -work blk_mem_gen_v8_4_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v 
+# -- Compiling module STATE_LOGIC_v8_4
+# -- Compiling module beh_vlog_muxf7_v8_4
+# -- Compiling module beh_vlog_ff_clr_v8_4
+# -- Compiling module beh_vlog_ff_pre_v8_4
+# -- Compiling module beh_vlog_ff_ce_clr_v8_4
+# -- Compiling module write_netlist_v8_4
+# -- Compiling module read_netlist_v8_4
+# -- Compiling module blk_mem_axi_write_wrapper_beh_v8_4
+# -- Compiling module blk_mem_axi_read_wrapper_beh_v8_4
+# -- Compiling module blk_mem_axi_regs_fwd_v8_4
+# -- Compiling module blk_mem_gen_v8_4_1_output_stage
+# -- Compiling module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+# -- Compiling module blk_mem_gen_v8_4_1_mem_module
+# -- Compiling module blk_mem_gen_v8_4_1
+# 
+# Top level modules:
+# 	blk_mem_gen_v8_4_1
+# End time: 09:36:28 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:28 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v 
+# -- Compiling module data_pri
+# -- Compiling module fifo_ila
+# 
+# Top level modules:
+# 	data_pri
+# 	fifo_ila
+# End time: 09:36:28 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:28 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/fifo_generator_vlog_beh.v 
+# -- Compiling module fifo_generator_vlog_beh
+# -- Compiling module fifo_generator_v13_2_1_CONV_VER
+# -- Compiling module fifo_generator_v13_2_1_sync_stage
+# -- Compiling module fifo_generator_v13_2_1_bhv_ver_as
+# -- Compiling module fifo_generator_v13_2_1_beh_ver_ll_afifo
+# -- Compiling module fifo_generator_v13_2_1_bhv_ver_ss
+# -- Compiling module fifo_generator_v13_2_1_bhv_ver_preload0
+# -- Compiling module fifo_generator_v13_2_1_axic_reg_slice
+# 
+# Top level modules:
+# 	fifo_generator_vlog_beh
+# End time: 09:36:28 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:29 on Jul 19,2022
+# vcom -64 -93 -work fifo_generator_v13_2_1 ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd 
+# -- Loading package STANDARD
+# End time: 09:36:30 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:30 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.v 
+# 
+# Top level modules:
+# End time: 09:36:31 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:31 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Compiling module ber_fifo
+# -- Compiling module ber_pll_clk_wiz
+# -- Compiling module ber_pll
+# -- Compiling module fifo_generator_0
+# 
+# Top level modules:
+# 	ber_fifo
+# 	ber_pll
+# 	fifo_generator_0
+# End time: 09:36:31 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:31 on Jul 19,2022
+# vlog -64 -incr -work dist_mem_gen_v8_0_12 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Compiling module dist_mem_gen_v8_0_12
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_12
+# End time: 09:36:31 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:31 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Compiling module H3_4
+# -- Compiling module H3_3
+# -- Compiling module H3_2
+# -- Compiling module H3_1
+# -- Compiling module H2_4
+# -- Compiling module H2_3
+# -- Compiling module H2_2
+# -- Compiling module H2_1
+# -- Compiling module H1_4
+# -- Compiling module H1_3
+# -- Compiling module H1_2
+# -- Compiling module H1_1
+# -- Compiling module coe4_4
+# -- Compiling module coe4_3
+# -- Compiling module coe4_2
+# -- Compiling module coe4_1
+# -- Compiling module fifo_in
+# -- Compiling module ten_bit_clk_wiz
+# -- Compiling module ten_bit
+# -- Compiling module decode_TX_STARTUP_FSM
+# -- Compiling module decode_RX_STARTUP_FSM
+# -- Compiling module decode_init
+# -- Compiling module decode_cpll_railing
+# -- Compiling module decode_GT
+# -- Compiling module decode_multi_gt
+# -- Compiling module decode_sync_block
+# -- Compiling module decode
+# -- Compiling module all_control
+# -- Compiling module ber_com
+# -- Compiling module buff
+# -- Compiling module decode_common
+# -- Compiling module decode_common_reset
+# -- Compiling module decode_exdes
+# -- Compiling module decode_GT_FRAME_GEN
+# -- Compiling module decode_GT_USRCLK_SOURCE
+# -- Compiling module decode_out
+# -- Compiling module decode_support
+# -- Compiling module error_comp
+# -- Compiling module error_control
+# -- Compiling module f_control
+# -- Compiling module ber_fifo_test
+# -- Compiling module find_max
+# -- Compiling module meg
+# -- Compiling module fn_1
+# -- Compiling module fn_2
+# -- Compiling module fn_3
+# -- Compiling module fn_4
+# -- Compiling module invert
+# -- Compiling module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 09:36:32 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:36:33 on Jul 19,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 09:36:33 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1197.750 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=5792)
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1197.750 ; gain = 0.000
+reset_run coe4_1_synth_1
+reset_run coe4_2_synth_1
+reset_run coe4_3_synth_1
+reset_run coe4_4_synth_1
+reset_run H1_1_synth_1
+reset_run H1_2_synth_1
+reset_run H1_3_synth_1
+reset_run H1_4_synth_1
+reset_run H2_1_synth_1
+reset_run H2_2_synth_1
+reset_run H2_3_synth_1
+reset_run H2_4_synth_1
+reset_run H3_1_synth_1
+reset_run H3_2_synth_1
+reset_run H3_3_synth_1
+reset_run H3_4_synth_1
+reset_run data_pri_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/ila_1/ila_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.xci' is already up-to-date
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'coe4_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'coe4_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'coe4_3'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'coe4_4'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H1_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H1_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H1_3'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H1_4'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H2_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H2_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H2_3'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H2_4'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H3_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H3_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H3_3'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'H3_4'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_pri'...
+[Tue Jul 19 09:41:46 2022] Launched coe4_1_synth_1, coe4_2_synth_1, coe4_3_synth_1, coe4_4_synth_1, H1_1_synth_1, H1_2_synth_1, H1_3_synth_1, H1_4_synth_1, H2_1_synth_1, H2_2_synth_1, H2_3_synth_1, H2_4_synth_1, H3_1_synth_1, H3_2_synth_1, H3_3_synth_1, H3_4_synth_1, data_pri_synth_1, synth_1...
+Run output will be captured here:
+coe4_1_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/coe4_1_synth_1/runme.log
+coe4_2_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/coe4_2_synth_1/runme.log
+coe4_3_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/coe4_3_synth_1/runme.log
+coe4_4_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/coe4_4_synth_1/runme.log
+H1_1_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H1_1_synth_1/runme.log
+H1_2_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H1_2_synth_1/runme.log
+H1_3_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H1_3_synth_1/runme.log
+H1_4_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H1_4_synth_1/runme.log
+H2_1_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H2_1_synth_1/runme.log
+H2_2_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H2_2_synth_1/runme.log
+H2_3_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H2_3_synth_1/runme.log
+H2_4_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H2_4_synth_1/runme.log
+H3_1_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H3_1_synth_1/runme.log
+H3_2_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H3_2_synth_1/runme.log
+H3_3_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H3_3_synth_1/runme.log
+H3_4_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/H3_4_synth_1/runme.log
+data_pri_synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/data_pri_synth_1/runme.log
+synth_1: E:/ldpc_5_v2_ber_test/test_ldpc.runs/synth_1/runme.log
+[Tue Jul 19 09:41:48 2022] Launched impl_1...
+Run output will be captured here: E:/ldpc_5_v2_ber_test/test_ldpc.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1212.160 ; gain = 10.828
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/blk_mem_gen_v8_4_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/fifo_generator_v13_2_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/dist_mem_gen_v8_0_12".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap blk_mem_gen_v8_4_1 modelsim_lib/msim/blk_mem_gen_v8_4_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap fifo_generator_v13_2_1 modelsim_lib/msim/fifo_generator_v13_2_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:55 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# 
+# Top level modules:
+# 	ila_1
+# 	ber_ila
+# End time: 09:52:55 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:55 on Jul 19,2022
+# vlog -64 -incr -work blk_mem_gen_v8_4_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v 
+# -- Skipping module STATE_LOGIC_v8_4
+# -- Skipping module beh_vlog_muxf7_v8_4
+# -- Skipping module beh_vlog_ff_clr_v8_4
+# -- Skipping module beh_vlog_ff_pre_v8_4
+# -- Skipping module beh_vlog_ff_ce_clr_v8_4
+# -- Skipping module write_netlist_v8_4
+# -- Skipping module read_netlist_v8_4
+# -- Skipping module blk_mem_axi_write_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_read_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_regs_fwd_v8_4
+# -- Skipping module blk_mem_gen_v8_4_1_output_stage
+# -- Skipping module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+# -- Skipping module blk_mem_gen_v8_4_1_mem_module
+# -- Skipping module blk_mem_gen_v8_4_1
+# 
+# Top level modules:
+# 	blk_mem_gen_v8_4_1
+# End time: 09:52:55 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:55 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v 
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# 
+# Top level modules:
+# 	data_pri
+# 	fifo_ila
+# End time: 09:52:55 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:55 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/fifo_generator_vlog_beh.v 
+# -- Skipping module fifo_generator_vlog_beh
+# -- Skipping module fifo_generator_v13_2_1_CONV_VER
+# -- Skipping module fifo_generator_v13_2_1_sync_stage
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_as
+# -- Skipping module fifo_generator_v13_2_1_beh_ver_ll_afifo
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_ss
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_preload0
+# -- Skipping module fifo_generator_v13_2_1_axic_reg_slice
+# 
+# Top level modules:
+# 	fifo_generator_vlog_beh
+# End time: 09:52:55 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:56 on Jul 19,2022
+# vcom -64 -93 -work fifo_generator_v13_2_1 ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd 
+# -- Loading package STANDARD
+# End time: 09:52:57 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:57 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.v 
+# 
+# Top level modules:
+# End time: 09:52:58 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:58 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# 
+# Top level modules:
+# 	ber_fifo
+# 	ber_pll
+# 	fifo_generator_0
+# End time: 09:52:58 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:58 on Jul 19,2022
+# vlog -64 -incr -work dist_mem_gen_v8_0_12 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_12
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_12
+# End time: 09:52:58 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:52:58 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Skipping module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Skipping module decode
+# -- Skipping module all_control
+# -- Skipping module ber_com
+# -- Skipping module buff
+# -- Skipping module decode_common
+# -- Skipping module decode_common_reset
+# -- Skipping module decode_exdes
+# -- Skipping module decode_GT_FRAME_GEN
+# -- Skipping module decode_GT_USRCLK_SOURCE
+# -- Skipping module decode_out
+# -- Skipping module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 09:52:58 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 09:53:00 on Jul 19,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 09:53:00 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.004 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=18872)
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1353.004 ; gain = 8.461
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/blk_mem_gen_v8_4_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/fifo_generator_v13_2_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/dist_mem_gen_v8_0_12".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap blk_mem_gen_v8_4_1 modelsim_lib/msim/blk_mem_gen_v8_4_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap fifo_generator_v13_2_1 modelsim_lib/msim/fifo_generator_v13_2_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:44 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# 
+# Top level modules:
+# 	ila_1
+# 	ber_ila
+# End time: 10:01:44 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:44 on Jul 19,2022
+# vlog -64 -incr -work blk_mem_gen_v8_4_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v 
+# -- Skipping module STATE_LOGIC_v8_4
+# -- Skipping module beh_vlog_muxf7_v8_4
+# -- Skipping module beh_vlog_ff_clr_v8_4
+# -- Skipping module beh_vlog_ff_pre_v8_4
+# -- Skipping module beh_vlog_ff_ce_clr_v8_4
+# -- Skipping module write_netlist_v8_4
+# -- Skipping module read_netlist_v8_4
+# -- Skipping module blk_mem_axi_write_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_read_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_regs_fwd_v8_4
+# -- Skipping module blk_mem_gen_v8_4_1_output_stage
+# -- Skipping module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+# -- Skipping module blk_mem_gen_v8_4_1_mem_module
+# -- Skipping module blk_mem_gen_v8_4_1
+# 
+# Top level modules:
+# 	blk_mem_gen_v8_4_1
+# End time: 10:01:44 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:44 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v 
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# 
+# Top level modules:
+# 	data_pri
+# 	fifo_ila
+# End time: 10:01:44 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:44 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/fifo_generator_vlog_beh.v 
+# -- Skipping module fifo_generator_vlog_beh
+# -- Skipping module fifo_generator_v13_2_1_CONV_VER
+# -- Skipping module fifo_generator_v13_2_1_sync_stage
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_as
+# -- Skipping module fifo_generator_v13_2_1_beh_ver_ll_afifo
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_ss
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_preload0
+# -- Skipping module fifo_generator_v13_2_1_axic_reg_slice
+# 
+# Top level modules:
+# 	fifo_generator_vlog_beh
+# End time: 10:01:44 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:45 on Jul 19,2022
+# vcom -64 -93 -work fifo_generator_v13_2_1 ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd 
+# -- Loading package STANDARD
+# End time: 10:01:46 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:46 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.v 
+# 
+# Top level modules:
+# End time: 10:01:47 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:47 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# 
+# Top level modules:
+# 	ber_fifo
+# 	ber_pll
+# 	fifo_generator_0
+# End time: 10:01:47 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:47 on Jul 19,2022
+# vlog -64 -incr -work dist_mem_gen_v8_0_12 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_12
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_12
+# End time: 10:01:47 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:47 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Skipping module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Skipping module decode
+# -- Skipping module all_control
+# -- Skipping module ber_com
+# -- Skipping module buff
+# -- Skipping module decode_common
+# -- Skipping module decode_common_reset
+# -- Skipping module decode_exdes
+# -- Compiling module decode_GT_FRAME_GEN
+# -- Skipping module decode_GT_USRCLK_SOURCE
+# -- Skipping module decode_out
+# -- Skipping module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 10:01:47 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:01:49 on Jul 19,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:01:49 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1353.004 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=20092)
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1353.004 ; gain = 0.000
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/blk_mem_gen_v8_4_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/fifo_generator_v13_2_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/dist_mem_gen_v8_0_12".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap blk_mem_gen_v8_4_1 modelsim_lib/msim/blk_mem_gen_v8_4_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap fifo_generator_v13_2_1 modelsim_lib/msim/fifo_generator_v13_2_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:11 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# 
+# Top level modules:
+# 	ila_1
+# 	ber_ila
+# End time: 10:07:11 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:11 on Jul 19,2022
+# vlog -64 -incr -work blk_mem_gen_v8_4_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v 
+# -- Skipping module STATE_LOGIC_v8_4
+# -- Skipping module beh_vlog_muxf7_v8_4
+# -- Skipping module beh_vlog_ff_clr_v8_4
+# -- Skipping module beh_vlog_ff_pre_v8_4
+# -- Skipping module beh_vlog_ff_ce_clr_v8_4
+# -- Skipping module write_netlist_v8_4
+# -- Skipping module read_netlist_v8_4
+# -- Skipping module blk_mem_axi_write_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_read_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_regs_fwd_v8_4
+# -- Skipping module blk_mem_gen_v8_4_1_output_stage
+# -- Skipping module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+# -- Skipping module blk_mem_gen_v8_4_1_mem_module
+# -- Skipping module blk_mem_gen_v8_4_1
+# 
+# Top level modules:
+# 	blk_mem_gen_v8_4_1
+# End time: 10:07:11 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:11 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v 
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# 
+# Top level modules:
+# 	data_pri
+# 	fifo_ila
+# End time: 10:07:11 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:12 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/fifo_generator_vlog_beh.v 
+# -- Skipping module fifo_generator_vlog_beh
+# -- Skipping module fifo_generator_v13_2_1_CONV_VER
+# -- Skipping module fifo_generator_v13_2_1_sync_stage
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_as
+# -- Skipping module fifo_generator_v13_2_1_beh_ver_ll_afifo
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_ss
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_preload0
+# -- Skipping module fifo_generator_v13_2_1_axic_reg_slice
+# 
+# Top level modules:
+# 	fifo_generator_vlog_beh
+# End time: 10:07:12 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:12 on Jul 19,2022
+# vcom -64 -93 -work fifo_generator_v13_2_1 ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd 
+# -- Loading package STANDARD
+# End time: 10:07:13 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:14 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.v 
+# 
+# Top level modules:
+# End time: 10:07:14 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:14 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# 
+# Top level modules:
+# 	ber_fifo
+# 	ber_pll
+# 	fifo_generator_0
+# End time: 10:07:14 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:14 on Jul 19,2022
+# vlog -64 -incr -work dist_mem_gen_v8_0_12 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_12
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_12
+# End time: 10:07:14 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:15 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Skipping module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Skipping module decode
+# -- Skipping module all_control
+# -- Skipping module ber_com
+# -- Compiling module buff
+# -- Skipping module decode_common
+# -- Skipping module decode_common_reset
+# -- Skipping module decode_exdes
+# -- Skipping module decode_GT_FRAME_GEN
+# -- Skipping module decode_GT_USRCLK_SOURCE
+# -- Skipping module decode_out
+# -- Skipping module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 10:07:15 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:07:16 on Jul 19,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:07:16 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1363.340 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=19388)
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1363.340 ; gain = 10.336
+set_property -dict [list CONFIG.gt0_val_rxusrclk {RXOUTCLK}] [get_ips decode]
+generate_target all [get_files  E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/decode/decode.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'decode'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'decode'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'decode'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'decode'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'decode'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1401.582 ; gain = 18.672
+catch { config_ip_cache -export [get_ips -all decode] }
+export_ip_user_files -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/decode/decode.xci] -no_script -sync -force -quiet
+reset_run decode_synth_1
+launch_runs -jobs 6 decode_synth_1
+[Tue Jul 19 10:17:43 2022] Launched decode_synth_1...
+Run output will be captured here: E:/ldpc_5_v2_ber_test/test_ldpc.runs/decode_synth_1/runme.log
+export_simulation -of_objects [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/decode/decode.xci] -directory E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/sim_scripts -ip_user_files_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files -ipstatic_source_dir E:/ldpc_5_v2_ber_test/test_ldpc.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/modelsim} {questa=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/questa} {riviera=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/riviera} {activehdl=E:/ldpc_5_v2_ber_test/test_ldpc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/Administrator/Desktop/rx_clk_common_reset.v C:/Users/Administrator/Desktop/rx_clk_common.v C:/Users/Administrator/Desktop/rx_clk_gt_usrclk_source.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v] -no_script -reset -force -quiet
+remove_files  {E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_gt_usrclk_source.v E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_common.v E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/imports/example_design/support/decode_common_reset.v}
+launch_simulation -install_path D:/modelsim/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'D:/modelsim/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'D:/xilinx/Xlib/modelsim.ini' copied to run dir:'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'decode_TB' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H1_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe1_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H2_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe2_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/H3_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe3_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_1.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_2.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_3.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/coe4_4.coe'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/data_pri.mif'
+INFO: [SIM-utils-43] Exported 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim/ber.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Reading D:/modelsim/tcl/vsim/pref.tcl
+
+# 10.5
+
+# do {decode_TB_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/blk_mem_gen_v8_4_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/fifo_generator_v13_2_1".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/dist_mem_gen_v8_0_12".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap blk_mem_gen_v8_4_1 modelsim_lib/msim/blk_mem_gen_v8_4_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap fifo_generator_v13_2_1 modelsim_lib/msim/fifo_generator_v13_2_1 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap dist_mem_gen_v8_0_12 modelsim_lib/msim/dist_mem_gen_v8_0_12 
+# Modifying D:\xilinx\Xlib\modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:29 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ila_1/sim/ila_1.v ../../../../test_ldpc.srcs/sources_1/ip/ber_ila/sim/ber_ila.v 
+# -- Skipping module ila_1
+# -- Skipping module ber_ila
+# 
+# Top level modules:
+# 	ila_1
+# 	ber_ila
+# End time: 10:30:29 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:29 on Jul 19,2022
+# vlog -64 -incr -work blk_mem_gen_v8_4_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v 
+# -- Skipping module STATE_LOGIC_v8_4
+# -- Skipping module beh_vlog_muxf7_v8_4
+# -- Skipping module beh_vlog_ff_clr_v8_4
+# -- Skipping module beh_vlog_ff_pre_v8_4
+# -- Skipping module beh_vlog_ff_ce_clr_v8_4
+# -- Skipping module write_netlist_v8_4
+# -- Skipping module read_netlist_v8_4
+# -- Skipping module blk_mem_axi_write_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_read_wrapper_beh_v8_4
+# -- Skipping module blk_mem_axi_regs_fwd_v8_4
+# -- Skipping module blk_mem_gen_v8_4_1_output_stage
+# -- Skipping module blk_mem_gen_v8_4_1_softecc_output_reg_stage
+# -- Skipping module blk_mem_gen_v8_4_1_mem_module
+# -- Skipping module blk_mem_gen_v8_4_1
+# 
+# Top level modules:
+# 	blk_mem_gen_v8_4_1
+# End time: 10:30:29 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:29 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/data_pri/sim/data_pri.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_ila_1/sim/fifo_ila.v 
+# -- Skipping module data_pri
+# -- Skipping module fifo_ila
+# 
+# Top level modules:
+# 	data_pri
+# 	fifo_ila
+# End time: 10:30:29 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:29 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/fifo_generator_vlog_beh.v 
+# -- Skipping module fifo_generator_vlog_beh
+# -- Skipping module fifo_generator_v13_2_1_CONV_VER
+# -- Skipping module fifo_generator_v13_2_1_sync_stage
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_as
+# -- Skipping module fifo_generator_v13_2_1_beh_ver_ll_afifo
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_ss
+# -- Skipping module fifo_generator_v13_2_1_bhv_ver_preload0
+# -- Skipping module fifo_generator_v13_2_1_axic_reg_slice
+# 
+# Top level modules:
+# 	fifo_generator_vlog_beh
+# End time: 10:30:29 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:30 on Jul 19,2022
+# vcom -64 -93 -work fifo_generator_v13_2_1 ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.vhd 
+# -- Loading package STANDARD
+# End time: 10:30:31 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:31 on Jul 19,2022
+# vlog -64 -incr -work fifo_generator_v13_2_1 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/hdl/fifo_generator_v13_2_rfs.v 
+# 
+# Top level modules:
+# End time: 10:30:32 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:32 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/ber_fifo/sim/ber_fifo.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ber_pll/ber_pll.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Skipping module ber_fifo
+# -- Skipping module ber_pll_clk_wiz
+# -- Skipping module ber_pll
+# -- Skipping module fifo_generator_0
+# 
+# Top level modules:
+# 	ber_fifo
+# 	ber_pll
+# 	fifo_generator_0
+# End time: 10:30:32 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:32 on Jul 19,2022
+# vlog -64 -incr -work dist_mem_gen_v8_0_12 "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_12
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_12
+# End time: 10:30:32 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:32 on Jul 19,2022
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ten_bit" "+incdir+../../../../test_ldpc.srcs/sources_1/ip/ber_pll" ../../../../test_ldpc.srcs/sources_1/ip/H3_4/sim/H3_4.v ../../../../test_ldpc.srcs/sources_1/ip/H3_3/sim/H3_3.v ../../../../test_ldpc.srcs/sources_1/ip/H3_2/sim/H3_2.v ../../../../test_ldpc.srcs/sources_1/ip/H3_1/sim/H3_1.v ../../../../test_ldpc.srcs/sources_1/ip/H2_4/sim/H2_4.v ../../../../test_ldpc.srcs/sources_1/ip/H2_3/sim/H2_3.v ../../../../test_ldpc.srcs/sources_1/ip/H2_2/sim/H2_2.v ../../../../test_ldpc.srcs/sources_1/ip/H2_1/sim/H2_1.v ../../../../test_ldpc.srcs/sources_1/ip/H1_4/sim/H1_4.v ../../../../test_ldpc.srcs/sources_1/ip/H1_3/sim/H1_3.v ../../../../test_ldpc.srcs/sources_1/ip/H1_2/sim/H1_2.v ../../../../test_ldpc.srcs/sources_1/ip/H1_1/sim/H1_1.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_4/sim/coe4_4.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_3/sim/coe4_3.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_2/sim/coe4_2.v ../../../../test_ldpc.srcs/sources_1/ip/coe4_1/sim/coe4_1.v ../../../../test_ldpc.srcs/sources_1/ip/fifo_in/sim/fifo_in.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit_clk_wiz.v ../../../../test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_tx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_rx_startup_fsm.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_init.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_cpll_railing.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode_multi_gt.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode/example_design/decode_sync_block.v ../../../../test_ldpc.srcs/sources_1/ip/decode/decode.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/all_control.v ../../../../test_ldpc.srcs/sources_1/new/ber_com.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/buff.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_exdes.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/decode_gt_frame_gen.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/decode_out.v ../../../../test_ldpc.srcs/sources_1/imports/example_design/support/decode_support.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_comp.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/error_control.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/f_control.v ../../../../test_ldpc.srcs/sources_1/new/fifo_ber.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/find_max.v ../../../../test_ldpc.srcs/sources_1/new/fn_1.v ../../../../test_ldpc.srcs/sources_1/new/fn_2.v ../../../../test_ldpc.srcs/sources_1/new/fn_3.v ../../../../test_ldpc.srcs/sources_1/new/fn_4.v ../../../../test_ldpc.srcs/sources_1/imports/decode_code/invert.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_common_reset.v ../../../../test_ldpc.srcs/sources_1/imports/Desktop/rx_clk_gt_usrclk_source.v ../../../../test_ldpc.srcs/sim_1/new/decode.v 
+# -- Skipping module H3_4
+# -- Skipping module H3_3
+# -- Skipping module H3_2
+# -- Skipping module H3_1
+# -- Skipping module H2_4
+# -- Skipping module H2_3
+# -- Skipping module H2_2
+# -- Skipping module H2_1
+# -- Skipping module H1_4
+# -- Skipping module H1_3
+# -- Skipping module H1_2
+# -- Skipping module H1_1
+# -- Skipping module coe4_4
+# -- Skipping module coe4_3
+# -- Skipping module coe4_2
+# -- Skipping module coe4_1
+# -- Skipping module fifo_in
+# -- Skipping module ten_bit_clk_wiz
+# -- Skipping module ten_bit
+# -- Skipping module decode_TX_STARTUP_FSM
+# -- Skipping module decode_RX_STARTUP_FSM
+# -- Compiling module decode_init
+# -- Skipping module decode_cpll_railing
+# -- Skipping module decode_GT
+# -- Skipping module decode_multi_gt
+# -- Skipping module decode_sync_block
+# -- Compiling module decode
+# -- Skipping module all_control
+# -- Compiling module ber_com
+# -- Skipping module buff
+# -- Skipping module decode_exdes
+# -- Skipping module decode_GT_FRAME_GEN
+# -- Skipping module decode_out
+# -- Compiling module decode_support
+# -- Skipping module error_comp
+# -- Skipping module error_control
+# -- Skipping module f_control
+# -- Skipping module ber_fifo_test
+# -- Skipping module find_max
+# -- Skipping module meg
+# -- Skipping module fn_1
+# -- Skipping module fn_2
+# -- Skipping module fn_3
+# -- Skipping module fn_4
+# -- Skipping module invert
+# -- Compiling module rx_clk_common
+# -- Compiling module rx_clk_common_reset
+# -- Compiling module rx_clk_GT_USRCLK_SOURCE
+# -- Skipping module decode_TB
+# 
+# Top level modules:
+# 	decode_TB
+# End time: 10:30:33 on Jul 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 10:30:34 on Jul 19,2022
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:30:34 on Jul 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1438.199 ; gain = 0.000
+INFO: [USF-ModelSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'E:/ldpc_5_v2_ber_test/test_ldpc.sim/sim_1/behav/modelsim'
+Program launched (PID=15984)
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1438.199 ; gain = 8.199
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/ila_1/ila_1.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/ldpc_5_v2_ber_test/test_ldpc.srcs/sources_1/ip/ten_bit/ten_bit.xci' is already up-to-date
+[Tue Jul 19 10:31:58 2022] Launched synth_1...
+Run output will be captured here: E:/ldpc_5_v2_ber_test/test_ldpc.runs/synth_1/runme.log
+[Tue Jul 19 10:31:58 2022] Launched impl_1...
+Run output will be captured here: E:/ldpc_5_v2_ber_test/test_ldpc.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 11:10:52 2022...

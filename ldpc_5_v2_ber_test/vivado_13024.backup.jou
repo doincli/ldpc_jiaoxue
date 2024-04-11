@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Aug 16 14:45:34 2022
+# Process ID: 13024
+# Current directory: E:/ldpc_5_v2_ber_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15448 E:\ldpc_5_v2_ber_test\test_ldpc.xpr
+# Log file: E:/ldpc_5_v2_ber_test/vivado.log
+# Journal file: E:/ldpc_5_v2_ber_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ldpc_5_v2_ber_test/test_ldpc.xpr
+update_compile_order -fileset sources_1

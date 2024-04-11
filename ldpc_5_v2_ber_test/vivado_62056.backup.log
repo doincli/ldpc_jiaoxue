@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan 19 19:54:12 2024
+# Process ID: 62056
+# Current directory: E:/ldpc_5_v2_ber_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent96104 E:\ldpc_5_v2_ber_test\test_ldpc.xpr
+# Log file: E:/ldpc_5_v2_ber_test/vivado.log
+# Journal file: E:/ldpc_5_v2_ber_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ldpc_5_v2_ber_test/test_ldpc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:13 . Memory (MB): peak = 969.359 ; gain = 236.852
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 19 20:16:59 2024...

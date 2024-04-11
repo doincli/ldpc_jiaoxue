@@ -1,0 +1,689 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {decode_TB_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L fifo_generator_v13_2_1 -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.decode_TB xil_defaultlib.glbl 
+# Start time: 15:15:26 on Apr 11,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.decode_TB(fast)
+# Loading work.decode_exdes(fast)
+# Loading work.decode_support(fast)
+# Loading work.rx_clk_GT_USRCLK_SOURCE(fast)
+# Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rx_clk_common(fast)
+# Loading unisims_ver.GTXE2_COMMON(fast)
+# Loading work.rx_clk_common_reset(fast)
+# Loading work.decode(fast)
+# Loading work.decode_init(fast)
+# Loading work.decode_multi_gt(fast)
+# Loading work.decode_GT(fast)
+# Loading unisims_ver.GTXE2_CHANNEL(fast)
+# Loading work.decode_cpll_railing(fast)
+# Loading unisims_ver.BUFH(fast)
+# Loading work.decode_TX_STARTUP_FSM(fast)
+# Loading work.decode_sync_block(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading work.decode_RX_STARTUP_FSM(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.decode_GT_FRAME_GEN(fast)
+# Loading work.all_control(fast)
+# Loading work.ten_bit(fast)
+# Loading work.ten_bit_clk_wiz(fast)
+# Loading unisims_ver.PLLE2_ADV(fast)
+# Loading work.buff(fast)
+# Loading work.fifo_in(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_preload0(fast)
+# Loading work.error_control(fast)
+# Loading work.coe4_1(fast)
+# Loading dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(fast)
+# Loading work.coe4_2(fast)
+# Loading work.coe4_3(fast)
+# Loading work.coe4_4(fast)
+# Loading work.H1_1(fast)
+# Loading work.H1_2(fast)
+# Loading work.H1_3(fast)
+# Loading work.H1_4(fast)
+# Loading work.H2_1(fast)
+# Loading work.H2_2(fast)
+# Loading work.H2_3(fast)
+# Loading work.H2_4(fast)
+# Loading work.H3_1(fast)
+# Loading work.H3_2(fast)
+# Loading work.H3_3(fast)
+# Loading work.H3_4(fast)
+# Loading work.error_comp(fast)
+# Loading work.f_control(fast)
+# Loading work.fn_1(fast)
+# Loading work.fn_2(fast)
+# Loading work.fn_3(fast)
+# Loading work.fn_4(fast)
+# Loading work.find_max(fast)
+# Loading work.meg(fast)
+# Loading work.invert(fast)
+# Loading work.decode_out(fast)
+# Loading work.fifo_generator_0(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast__1)
+# Loading work.ber_fifo_test(fast)
+# Loading work.ber_pll(fast)
+# Loading work.ber_pll_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.PLLE2_ADV(fast__1)
+# Loading work.ber_fifo(fast)
+# Loading work.fifo_ila(fast)
+# Loading work.ber_com(fast)
+# Loading work.data_pri(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.ber_ila(fast)
+# Loading work.ila_1(fast)
+# Loading work.glbl(fast)
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Timing checks are not valid
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module decode_TB.decode_exdes_i.top_ber_com.origina.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Timing checks are valid
+add wave -position insertpoint  \
+sim:/decode_TB/decode_exdes_i/decode_test/DATA_W \
+sim:/decode_TB/decode_exdes_i/decode_test/DATA_R \
+sim:/decode_TB/decode_exdes_i/decode_test/clk \
+sim:/decode_TB/decode_exdes_i/decode_test/rst \
+sim:/decode_TB/decode_exdes_i/decode_test/din \
+sim:/decode_TB/decode_exdes_i/decode_test/decode \
+sim:/decode_TB/decode_exdes_i/decode_test/clk_50 \
+sim:/decode_TB/decode_exdes_i/decode_test/clk_500 \
+sim:/decode_TB/decode_exdes_i/decode_test/locked \
+sim:/decode_TB/decode_exdes_i/decode_test/rst_n \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out \
+sim:/decode_TB/decode_exdes_i/decode_test/sel \
+sim:/decode_TB/decode_exdes_i/decode_test/data_out_s1 \
+sim:/decode_TB/decode_exdes_i/decode_test/sn_cnt1 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_out_s2 \
+sim:/decode_TB/decode_exdes_i/decode_test/sn_cnt2 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_out_s3 \
+sim:/decode_TB/decode_exdes_i/decode_test/sn_cnt3 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_out_s4 \
+sim:/decode_TB/decode_exdes_i/decode_test/sn_cnt4 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_out_s5 \
+sim:/decode_TB/decode_exdes_i/decode_test/sn_cnt5 \
+sim:/decode_TB/decode_exdes_i/decode_test/f_start1 \
+sim:/decode_TB/decode_exdes_i/decode_test/fn_cnt1 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_final1 \
+sim:/decode_TB/decode_exdes_i/decode_test/f_start2 \
+sim:/decode_TB/decode_exdes_i/decode_test/fn_cnt2 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_final2 \
+sim:/decode_TB/decode_exdes_i/decode_test/f_start3 \
+sim:/decode_TB/decode_exdes_i/decode_test/fn_cnt3 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_final3 \
+sim:/decode_TB/decode_exdes_i/decode_test/f_start4 \
+sim:/decode_TB/decode_exdes_i/decode_test/fn_cnt4 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_final4 \
+sim:/decode_TB/decode_exdes_i/decode_test/f_start5 \
+sim:/decode_TB/decode_exdes_i/decode_test/fn_cnt5 \
+sim:/decode_TB/decode_exdes_i/decode_test/data_final5 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_en1 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_cnt1 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_max1 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_count1 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_en2 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_cnt2 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_max2 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_count2 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_en3 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_cnt3 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_max3 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_count3 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_en4 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_cnt4 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_max4 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_count4 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_en5 \
+sim:/decode_TB/decode_exdes_i/decode_test/find_max_cnt5 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_max5 \
+sim:/decode_TB/decode_exdes_i/decode_test/findout_count5 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_en1 \
+sim:/decode_TB/decode_exdes_i/decode_test/iteration_num1 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_out1 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_en1 \
+sim:/decode_TB/decode_exdes_i/decode_test/c_code1 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_en2 \
+sim:/decode_TB/decode_exdes_i/decode_test/iteration_num2 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_out2 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_en2 \
+sim:/decode_TB/decode_exdes_i/decode_test/c_code2 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_en3 \
+sim:/decode_TB/decode_exdes_i/decode_test/iteration_num3 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_out3 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_en3 \
+sim:/decode_TB/decode_exdes_i/decode_test/c_code3 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_en4 \
+sim:/decode_TB/decode_exdes_i/decode_test/iteration_num4 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_out4 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_en4 \
+sim:/decode_TB/decode_exdes_i/decode_test/c_code4 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_en5 \
+sim:/decode_TB/decode_exdes_i/decode_test/iteration_num5 \
+sim:/decode_TB/decode_exdes_i/decode_test/invert_out5 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_en5 \
+sim:/decode_TB/decode_exdes_i/decode_test/c_code5 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_start1 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_data_in1 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_start2 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_data_in2 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_start3 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_data_in3 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_start4 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_data_in4 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_start5 \
+sim:/decode_TB/decode_exdes_i/decode_test/error_data_in5 \
+sim:/decode_TB/decode_exdes_i/decode_test/cnt \
+sim:/decode_TB/decode_exdes_i/decode_test/sel_cnt \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out1 \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out2 \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild1 \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild2 \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out3 \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild3 \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out4 \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild4 \
+sim:/decode_TB/decode_exdes_i/decode_test/fifoin_out5 \
+sim:/decode_TB/decode_exdes_i/decode_test/tem_vaild5 \
+sim:/decode_TB/decode_exdes_i/decode_test/code_fin \
+sim:/decode_TB/decode_exdes_i/decode_test/ilte_num_fin \
+sim:/decode_TB/decode_exdes_i/decode_test/add_cnt \
+sim:/decode_TB/decode_exdes_i/decode_test/end_cnt
+add wave -position insertpoint  \
+sim:/decode_TB/decode_exdes_i/top_ber_com/DATA_W \
+sim:/decode_TB/decode_exdes_i/top_ber_com/DATA_ERROR \
+sim:/decode_TB/decode_exdes_i/top_ber_com/clk \
+sim:/decode_TB/decode_exdes_i/top_ber_com/rst_n \
+sim:/decode_TB/decode_exdes_i/top_ber_com/rst_in \
+sim:/decode_TB/decode_exdes_i/top_ber_com/data_in \
+sim:/decode_TB/decode_exdes_i/top_ber_com/data_tmp \
+sim:/decode_TB/decode_exdes_i/top_ber_com/reciver_data \
+sim:/decode_TB/decode_exdes_i/top_ber_com/compute_en \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en1 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en2 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en3 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en4 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en5 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en6 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en7 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en8 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en9 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en10 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en11 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en12 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en13 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en14 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en15 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_en16 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num1 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num2 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num3 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num4 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num5 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num6 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num7 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num8 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num9 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num10 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num11 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num12 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num13 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num14 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num15 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num16 \
+sim:/decode_TB/decode_exdes_i/top_ber_com/original_data \
+sim:/decode_TB/decode_exdes_i/top_ber_com/frame_num \
+sim:/decode_TB/decode_exdes_i/top_ber_com/error_num \
+sim:/decode_TB/decode_exdes_i/top_ber_com/comp_cnt \
+sim:/decode_TB/decode_exdes_i/top_ber_com/addra \
+sim:/decode_TB/decode_exdes_i/top_ber_com/add_cnt \
+sim:/decode_TB/decode_exdes_i/top_ber_com/end_cnt \
+sim:/decode_TB/decode_exdes_i/top_ber_com/cnt
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.decode_TB(fast)
+# Loading work.decode_exdes(fast)
+# Loading work.decode_support(fast)
+# Loading work.rx_clk_GT_USRCLK_SOURCE(fast)
+# Loading unisims_ver.IBUFDS_GTE2(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.rx_clk_common(fast)
+# Loading unisims_ver.GTXE2_COMMON(fast)
+# Loading work.rx_clk_common_reset(fast)
+# Loading work.decode(fast)
+# Loading work.decode_init(fast)
+# Loading work.decode_multi_gt(fast)
+# Loading work.decode_GT(fast)
+# Loading unisims_ver.GTXE2_CHANNEL(fast)
+# Loading work.decode_cpll_railing(fast)
+# Loading unisims_ver.BUFH(fast)
+# Loading work.decode_TX_STARTUP_FSM(fast)
+# Loading work.decode_sync_block(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.FDRE(fast)
+# Loading work.decode_RX_STARTUP_FSM(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading work.decode_GT_FRAME_GEN(fast)
+# Loading work.all_control(fast)
+# Loading work.ten_bit(fast)
+# Loading work.ten_bit_clk_wiz(fast)
+# Loading unisims_ver.PLLE2_ADV(fast)
+# Loading work.buff(fast)
+# Loading work.fifo_in(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_preload0(fast)
+# Loading work.error_control(fast)
+# Loading work.coe4_1(fast)
+# Loading dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(fast)
+# Loading work.coe4_2(fast)
+# Loading work.coe4_3(fast)
+# Loading work.coe4_4(fast)
+# Loading work.H1_1(fast)
+# Loading work.H1_2(fast)
+# Loading work.H1_3(fast)
+# Loading work.H1_4(fast)
+# Loading work.H2_1(fast)
+# Loading work.H2_2(fast)
+# Loading work.H2_3(fast)
+# Loading work.H2_4(fast)
+# Loading work.H3_1(fast)
+# Loading work.H3_2(fast)
+# Loading work.H3_3(fast)
+# Loading work.H3_4(fast)
+# Loading work.error_comp(fast)
+# Loading work.f_control(fast)
+# Loading work.fn_1(fast)
+# Loading work.fn_2(fast)
+# Loading work.fn_3(fast)
+# Loading work.fn_4(fast)
+# Loading work.find_max(fast)
+# Loading work.meg(fast)
+# Loading work.invert(fast)
+# Loading work.decode_out(fast)
+# Loading work.fifo_generator_0(fast)
+# Loading fifo_generator_v13_2_1.fifo_generator_vlog_beh(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_CONV_VER(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_bhv_ver_as(fast__1)
+# Loading fifo_generator_v13_2_1.fifo_generator_v13_2_1_sync_stage(fast__1)
+# Loading work.ber_fifo_test(fast)
+# Loading work.ber_pll(fast)
+# Loading work.ber_pll_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.PLLE2_ADV(fast__1)
+# Loading work.ber_fifo(fast)
+# Loading work.fifo_ila(fast)
+# Loading work.ber_com(fast)
+# Loading work.data_pri(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(fast)
+# Loading blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_output_reg_stage(fast)
+# Loading work.ber_ila(fast)
+# Loading work.ila_1(fast)
+# Loading work.glbl(fast)
+run
+# Timing checks are not valid
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator module decode_TB.decode_exdes_i.top_ber_com.origina.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+# Timing checks are valid
+# End time: 15:38:28 on Apr 11,2024, Elapsed time: 0:23:02
+# Errors: 0, Warnings: 0
